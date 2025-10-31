@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  background: linear-gradient(to bottom right, #ffffff, #c3cfe2);
+  padding: 2rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.form-fieldset {
+  width: 100%;
+  border-radius: 10px;
+  padding: 25px;
+  border: solid #dcdee0 1px;
+
+  legend {
+    position: relative;
+    top: 2px;
+    padding: 0.6rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333333;
+  }
+}
+
+.form-table {
+  width: 100%;
+
+  td {
+    vertical-align: top;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    &:nth-child(odd) {
+      width: 60%;
+    }
+    
+    label {
+      font-weight: bold;
+      color: #333;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+
+  &::placeholder {
+    color: #bbb9b0;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+
+#color {
+  height: 50px;
+  padding: 5px;
+}
+
+#fnombre,
+#correo,
+#clave,
+#fnac,
+#web {
+  background-color: #fffbe6;
+  border-color: #cccdcd;
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+    border-color: #007bff;
+  }
+}
+
+#apellidos,
+#telefono,
+#edad,
+#color {
+  background-color: #ffffff;
+  border: 2px solid #73c285;
+
+  &:focus {
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.4);
+    border-color: #28a745;
+  }
+}
+
+.radio-group {
+  input {
+    padding: 0px;
+    margin: 10px;
+    width: auto;
+  }
+}
+
+#terminos {
+  width: 16px;
+  height: 16px;
+}
+
+.button {
+  text-align: center;
+}
+
+#submit {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.2s ease-in-out;
+  width: 65%;
+
+  &:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+}
